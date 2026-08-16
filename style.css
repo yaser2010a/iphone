@@ -161,6 +161,11 @@ ul li a {
 .product-img {
     width: 100%;
     margin-bottom: 16px;
+    transition: 0.5s;
+}
+
+.product-img:hover{
+    transform: scale(1.05);
 }
 
 .product-name {
