@@ -37,6 +37,11 @@ ul li a {
     cursor: pointer;
 }
 
+.hero {
+    position: relative;
+    min-height: 90vh;
+}
+
 .content {
     display: flex;
     justify-content: space-between;
