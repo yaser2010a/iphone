@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    min-height: 100vh;
+}
+.page{
+    min-height: 100vh;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 20px 0;
+    margin: auto;
+}
+
+.logo {
+    width: 90px;
+}
+
+ul li {
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+ul li a {
+    all: unset;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    gap: 50px;
+    overflow: hidden;
+}
+
+.text-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    color: #fff;
+    font-size: 40px;
+}
+
+.text {
+    color: #fff;
+    font-size: 15px;
+}
+
+.button {
+    
+    align-self: center;
+    color: #fff;
+    padding: 10px 25px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.button:hover{
+    transform: scale(1.2);
+}
+
+.iphone {
+    width: 300px;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+
+
+.iphone:hover{
+    transform: scale(1.1);
+}
+
+
+.iphones{
+    width: 40px;
+    margin: 5px;
+    transition: 0.5s;
+
+}
+
+.icons{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.iphones:hover{
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 900px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .text-group {
+        align-items: center;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .iphone {
+        width: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    ul li {
+        font-size: 16px;
+        margin: 0 6px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .iphone {
+        width: 180px;
+    }
+
+    .icons {
+        bottom: 10px;
+    }
+
+    .iphones {
+        width: 30px;
+        margin: 3px;
+    }
+}
